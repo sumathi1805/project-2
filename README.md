@@ -1,39 +1,73 @@
-# Automation with cloudformation
-# Introduction
-  AWS CloudFormation is a service that helps users manage and provision cloud resources. It treats infrastructure as code (IaC), which can make it easier to manage changes and versioning.Creates, updates, and deletes a set of resources as a single unit called a stack.
-# Language
-  YAML
-# Resources
-  * VPC<br>
-  * Public Subnet<br>
-  * Public RouteTable<br>
-  * Security Group
-  * Instance<br>
-  * S3 bucket<br>
-# Template Structure
-  * Parameters - Inputs into template and values pass to template at runtime.
-  * mappings   - A lookup tables,map keys to values so we can change values.
-  * Resources  - Create AWS resources which is based on infrastucture.
-  * Output     - Values of custom resources created by template (URLs, usernames, etc.)
+# AWS Infrastructure Automation with CloudFormation
 
-    ![pic2-Page-5 drawio](https://github.com/sumathi1805/project2/assets/150107821/8a3c7090-d986-4c75-8884-4cb67a07611c)
+## Overview
+This project demonstrates how to automate the provisioning of a complete AWS infrastructure using CloudFormation.
+
+It creates a fully functional environment including networking, compute, and storage resources using a single YAML template, enabling consistent and repeatable deployments.
+
+---
+
+## Architecture
+
+The CloudFormation template provisions:
+
+- VPC (custom network)
+- Public Subnet
+- Route Table with internet access
+- Security Group
+- EC2 Instance
+- S3 Bucket
+
+---
+
+## Key Features
+- Infrastructure as Code (IaC) using CloudFormation
+- Automated creation of AWS resources in a single stack
+- Reusable and parameterized template
+- Consistent and repeatable deployments
+- Reduced manual configuration errors
+
+---
+
+## Technologies Used
+- AWS CloudFormation
+- YAML
+- AWS EC2, S3, VPC
+
+---
+
+## Template Structure
+
+- **Parameters** – Inputs provided at runtime  
+- **Mappings** – Key-value pairs for dynamic configuration  
+- **Resources** – Defines AWS infrastructure  
+- **Outputs** – Displays useful information (e.g., instance details)
+
+---
+
+## Usage
+
+1. Upload the template to AWS CloudFormation
+2. Create a new stack
+3. Provide required parameters
+4. Launch the stack to provision resources automatically
+
+---
+
+![pic2-Page-5 drawio](https://github.com/sumathi1805/project2/assets/150107821/8a3c7090-d986-4c75-8884-4cb67a07611c)
 
 
 
-# Key functions
-## 1.Infrastructure as Code (IaC): 
-CloudFormation allows users to define and manage AWS infrastructure using a template, which is essentially code. This approach provides the benefits of versioning, reuse, and consistency in infrastructure deployment.
-## 2.Resource Orchestration: 
- CloudFormation helps orchestrate the creation, update, and deletion of a collection of AWS resources as a single unit called a stack. This ensures that all resources are provisioned in a coordinated and consistent manner.
-## 3.Automation Deployment:
-Users can create, modify, and delete AWS resources without manually interacting with the AWS Management Console. This automation reduces the risk of human error, increases efficiency, and enables reproducibility of infrastructure across different environments.
-## 4.Version Control:
-Since infrastructure is defined as code, CloudFormation templates can be version-controlled using standard version control systems. This facilitates tracking changes, collaboration among team members, and the ability to roll back to previous configurations if needed.
-## 5.Consistency and Reproducibility:
-CloudFormation provides a unified view of the entire stack and its resources, making it easier to manage and monitor the infrastructure. Users can efficiently track resource dependencies and manage the entire stack lifecycle.
-## 6.Cost Management:
-By defining infrastructure requirements in templates, users can estimate costs before deploying resources. CloudFormation also allows for the tagging of resources, aiding in cost allocation and budget management.
+## 🔑 Key Highlights
+
+- Implemented Infrastructure as Code (IaC) using CloudFormation to provision AWS resources
+- Automated deployment of complete infrastructure including VPC, EC2, and S3
+- Used parameterized templates for flexible and reusable deployments
+- Managed resource orchestration through CloudFormation stacks
+- Ensured consistent and repeatable environment setup
+- Reduced manual configuration and minimized human errors
   
-  
+## 🎯 Outcome
+This project simplifies infrastructure deployment by automating the creation of AWS resources, ensuring consistency, scalability, and faster provisioning.
 
 
