@@ -58,7 +58,7 @@ The CloudFormation template provisions:
 
 
 
-## 🔑 Key Highlights
+## Key Highlights
 
 - Implemented Infrastructure as Code (IaC) using CloudFormation to provision AWS resources
 - Automated deployment of complete infrastructure including VPC, EC2, and S3
@@ -67,7 +67,7 @@ The CloudFormation template provisions:
 - Ensured consistent and repeatable environment setup
 - Reduced manual configuration and minimized human errors
   
-## 🎯 Outcome
+## Outcome
 This project simplifies infrastructure deployment by automating the creation of AWS resources, ensuring consistency, scalability, and faster provisioning.
 
 
