@@ -70,4 +70,15 @@ The CloudFormation template provisions:
 ## Outcome
 This project simplifies infrastructure deployment by automating the creation of AWS resources, ensuring consistency, scalability, and faster provisioning.
 
+## ⚠️ Challenges & Learnings
+
+### Challenges
+- Debugging CloudFormation template errors due to incorrect YAML formatting
+- Managing dependencies between resources like VPC, subnet, and EC2
+- Handling stack failures and rollback scenarios
+
+### Learnings
+- Gained strong understanding of Infrastructure as Code (IaC)
+- Learned how CloudFormation manages resource orchestration using stacks
+- Improved ability to write reusable and parameterized templates
 
